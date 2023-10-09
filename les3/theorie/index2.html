@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/order" method="post">
+        <fieldset>
+            <legend>Contact informatie</legend>
+            <div>
+                <span>Voornaam</span> <!--Als je erop klikt gaat er niks gebeuren-->
+                <label for="fname">Voornaam</label><!--Als je hierop klink reditect to textbox-->
+                <input type="text" name="fname" id="fname"/>
+            </div>
+            <div>
+                <label for="lname">Achternaam</label><!--Als je hierop klink reditect to textbox-->
+                <input type="text" name="lname" id="lname"/>
+            </div>
+            <div>
+                <label for="email">email</label><!--Als je hierop klink reditect to textbox-->
+                <input type="email" name="email" id="email"/>
+            </div>
+            <div>
+                <label for="phone">Telefoon</label><!--Als je hierop klink reditect to textbox-->
+                <input type="tel" name="phone" id="phone"/>
+            </div>
+        </fieldset>
+
+        <div>
+            <label for="pass">Wachtwoord</label><!--Als je hierop klink reditect to textbox-->
+            <input type="password" name="pass" id="pass"/>
+        </div>
+
+        <div>
+            <label for="pizza">Pizza</label>
+            <select name="pizza" id="pizza">
+                <option>--- SELECT ---</option>
+                <option value="napoli">Napolitana</option>
+                <option selected value="margarita">Margarita</option> <!--selected om default deze optie te selecteren-->
+            </select>
+        </div>
+
+        <div>
+            <label for="date">Datum</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div>
+            <label for="time">Tijd</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div>
+            <input type="checkbox" checked id="extras" value="cheese" name="extras"/><!--checked-->
+            <label for="cheese">Kaas</label>
+            <input type="checkbox" id="extras" value="ham" name="extras"/>
+            <label for="ham">Hesp</label>
+        </div>
+
+        <div>
+            <label for="qty">Aantal</label>
+            <input type="number" name="qty" id="qty" min="0" max="5">
+        </div>
+
+        <div>
+            <input type="radio" name="levering" id="1618" value="1618"/><!--geef dezelfde name value-->
+            <label for="1618">16u-18u</label>
+            <input type="radio" name="levering" id="1820" value="1820"/><!--geef dezelfde name value-->
+            <label for="1820">18u-20u</label>
+        </div>
+
+        <div>
+            <label for="deliver">Bezorger</label>
+            <input type="text" name="deliver" id="deliver" list="lever"><!--id en list moeten hetzcelfde bevatten-->
+            <datalist id="lever">
+                <option value="Ben Verthonge"></option>
+                <option value="partick zfvs"></option>
+                <option value="Cedric Doembe"></option>
+            </datalist>
+        </div>
+
+        <textarea name="info" id="info" cols="30" rows="10"></textarea>
+
+        <div>
+            <button type="submit">Aanmaken</button>
+        </div>
+    </form>
+</body>
+</html>
