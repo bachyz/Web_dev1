@@ -1,0 +1,14 @@
+div{
+    margin: 1em;
+}
+
+.border{
+    border: solid 1px;
+}
+
+div:nth-of-type(2){
+    border: black 1px solid;
+    padding: 10px;
+    margin: 40px;
+}
+
