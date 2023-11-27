@@ -10,5 +10,9 @@
 }
 
 /* Plaats je oplossing hieronder */
+.flex-container{
+  display: flex;
+  justify-content: flex-end;
 
+}
 
